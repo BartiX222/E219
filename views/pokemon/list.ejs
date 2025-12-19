@@ -15,13 +15,6 @@
     <%- include('../partials/header') %>
 
     <main class="container my-4">
-      <% if (success && success.length) { %>
-        <div class="alert alert-success"><%= success %></div>
-      <% } %>
-      <% if (error && error.length) { %>
-        <div class="alert alert-danger"><%= error %></div>
-      <% } %>
-
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>Pokémon List</h2>
         <a href="/pokemon/new" class="btn btn-success">Add Pokémon</a>

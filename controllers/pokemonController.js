@@ -68,7 +68,6 @@ async function create(req, res, next) {
     };
 
     await pokemonModel.addPokemon(pokemon);
-    req.flash('success', 'Pokémon created successfully.');
     res.redirect('/pokemon');
   } catch (err) {
     next(err);
@@ -154,7 +153,6 @@ async function update(req, res, next) {
     };
 
     await pokemonModel.updatePokemon(req.params.id, updateObj);
-    req.flash('success', 'Pokémon updated successfully.');
     res.redirect(`/pokemon/${req.params.id}`);
   } catch (err) {
     next(err);
@@ -184,7 +182,6 @@ async function remove(req, res, next) {
     }
 
     await pokemonModel.deletePokemon(req.params.id);
-    req.flash('success', 'Pokémon deleted successfully.');
     res.redirect('/pokemon');
   } catch (err) {
     next(err);

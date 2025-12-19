@@ -19,13 +19,7 @@ The app is built with Node.js, Express, MongoDB (via Mongoose) and EJS templates
 
 ## Installation and Running
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/BartiX222/E219
-cd E219
-```
-
+1. Clone the repository (or copy the project files).
 2. Install dependencies:
 
 ```bash
@@ -83,4 +77,3 @@ Bartek Orczykowski
 ## License
 
 This project is licensed under the MIT License – see the `LICENSE` file for details.
-
