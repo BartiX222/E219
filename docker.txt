@@ -1,20 +1,20 @@
-// Instrukcja uruchomienia bazy MongoDB w Dockerze
+// Instructions for running a MongoDB database in Docker
 
-// 1. Uruchom Docker Desktop.
+// 1. Start Docker Desktop.
 
-// 2. W Docker Desktop, w prawym dolnym rogu otwórz terminal
-//    (Docker CLI) i wpisz poniższe polecenie, aby utworzyć
-//    i uruchomić kontener z bazą danych:
+// 2. In Docker Desktop, open the terminal in the bottom-right corner
+//    (Docker CLI) and run the following command to create
+//    and start a container with the database:
 //
 //    docker run -d --name pokemonDB -p 27017:27017 mongo:6.0
 //
-//    - kontener: pokemonDB
+//    - container name: pokemonDB
 //
-// 3. Aplikacja Node.js łączy się z bazą pod adresem:
+// 3. The Node.js application connects to the database at:
 //
 //    mongodb://127.0.0.1:27017/pokemon_wiki
 //
-// 4. Zatrzymanie i ponowne uruchomienie kontenera (opcjonalnie):
+// 4. Stopping and starting the container again (optional):
 //
 //    docker stop pokemonDB
 //    docker start pokemonDB
